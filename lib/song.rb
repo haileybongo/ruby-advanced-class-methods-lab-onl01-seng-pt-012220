@@ -48,7 +48,8 @@ class Song
   
   def self.new_from_filename(file)
     file_array = file.split(" - ")
-    file_array[0] = self.name
+    track = self.new
+    file_array[0] = trackname
     file_array.collect do |i|
       if i == "-" || "." || "mp3"
         i.delete 
