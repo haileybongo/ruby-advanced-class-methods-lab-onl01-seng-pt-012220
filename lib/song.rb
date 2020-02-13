@@ -50,7 +50,8 @@ class Song
     file_array = file.split(" - ")
     track = self.new
     file_array[0] = track.name
-    
+    file_mp3 = file_array[1].split(".")
+    file_mp3[0] = track.
     file_array.collect do |i|
       if i == "-" || "." || "mp3"
         i.delete 
