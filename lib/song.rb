@@ -49,12 +49,11 @@ class Song
   def self.new_from_filename(file)
     file_array = file.split(" - ")
     track = self.new
-    file_array[0] = track.name
+    file_array[0] = track.artist_name
     file_mp3 = file_array[1].split(".")
     file_mp3[0] = track.name
-    file_array.collect do |i|
-      if i == "-" || "." || "mp3"
-        i.delete 
+    track.save
+  end
       
 
 end
