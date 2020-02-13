@@ -53,7 +53,8 @@ class Song
     new_artist = file_array[0]
     track = self.new
     track.name = new_name
-    track.artist_name = new_artist   
+    track.artist_name = new_artist 
+    track
   end
       
 
