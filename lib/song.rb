@@ -60,6 +60,10 @@ class Song
   def self.create_from_filename(file)
     self.new_from_filename
     self.save 
+  end
+  
+  def self.destroy_all
+    @@all.clear 
       
 
 end
