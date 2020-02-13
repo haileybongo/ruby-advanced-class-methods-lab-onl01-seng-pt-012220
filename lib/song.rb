@@ -51,7 +51,8 @@ class Song
     file_mp3 = file_array[1].split(".")
     new_name = file_mp3[0].join("")
     new_artist = file_array[0].join("")
-    track = self.new_by_name(new_name)
+    track = self.new
+    track.name = new_name
     track.artist_name = new_artist   
   end
       
